@@ -5,6 +5,7 @@
 ## Overview & Description
 In the project, it provides how make a cross-platform project by using qmake.
 It shows how to create shared and static libraries, and use it in a whole completed project.
+Also how to use the plugin when run the executable program.
 The Qt Creator IDE is better recommended. 
 
 
