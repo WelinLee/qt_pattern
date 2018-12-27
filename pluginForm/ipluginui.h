@@ -9,7 +9,7 @@ class IPluginUi
 {
 public:
     virtual ~IPluginUi() { }
-    virtual QWidget *PluginUi() = 0;
+    virtual QWidget *PluginUi(QWidget *parent) = 0;
     virtual QString getSerialNumber() = 0;
 };
 

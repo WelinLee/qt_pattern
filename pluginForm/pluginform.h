@@ -16,11 +16,11 @@ public:
     virtual ~PluginForm();
 
 public:
-    virtual QWidget *PluginUi() override;
+    virtual QWidget *PluginUi(QWidget *parent) override;
     virtual QString getSerialNumber() override;
 
 private:
-    QWidget *m_widget;
+    //QWidget *m_widget;
 };
 
 #endif // PLUGINFORM_H

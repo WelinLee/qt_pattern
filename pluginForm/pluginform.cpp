@@ -4,23 +4,21 @@
 
 PluginForm::PluginForm()
 {
-    m_widget = new QWidget;
-    PluginWidget *widget = new PluginWidget;
-    m_widget = widget;
+
 }
 
 PluginForm::~PluginForm()
 {
-    if(m_widget)
-    {
-        delete m_widget;
-        m_widget = nullptr;
-    }
+
 }
 
-QWidget *PluginForm::PluginUi()
+QWidget *PluginForm::PluginUi(QWidget *parent)
 {
-    return m_widget;
+    if(nullptr == parent)
+        return nullptr;
+
+    PluginWidget *widget = new PluginWidget(parent);
+    return widget;
 }
 
 QString PluginForm::getSerialNumber()

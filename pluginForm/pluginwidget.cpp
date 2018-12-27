@@ -20,7 +20,7 @@ PluginWidget::~PluginWidget()
         m_timer->stop();
         delete m_timer;
     }
-//    delete ui;
+    delete ui;
 }
 
 void PluginWidget::slot_timer()
